@@ -1,19 +1,23 @@
-# 02-task-tracker
+# Brad Traversy - Youtube tutorials 04 - Vue JS Crash Course 2021
 
-## Project setup
-```
-npm install
-```
+## [Tutorial video on Youtube](https://youtu.be/qZXt1Aom3Cs)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Run:
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- `npm install` to download node_modules
+- add `.env` file with `DB_CONNECT` environment variable
+- `netlify dev` to run the netlify server
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Deployed
+
+- [On Netlify]()
+
+## Mayor changes:
+
+- I added back-end to the project
+  - I'm using serverless functions on Netlify to keep my secret API key hidden.
+  - I'm using mongoose in the serverless function to save the data in a mongoDB database.
+
+## Environment variable:
+
+- `DB_CONNECT=mongodb://localhost:27017/TasksDB`
