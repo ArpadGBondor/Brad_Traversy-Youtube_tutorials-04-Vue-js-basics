@@ -5,7 +5,7 @@
 
 [[redirects]]
  from = '/api/tasks/:id'
- to = '/.netlify/functions/tasks-id'
+ to = '/.netlify/functions/tasks'
  status = 200
 
 [[redirects]]
