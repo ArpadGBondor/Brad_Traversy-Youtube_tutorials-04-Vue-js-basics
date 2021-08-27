@@ -17,6 +17,7 @@
 - I added back-end to the project
   - I'm using serverless functions on Netlify to keep my secret API key hidden.
   - I'm using mongoose in the serverless function to save the data in a mongoDB database.
+  - I turned the backend function into a RESTful API.
 
 ## Environment variable:
 
