@@ -26,7 +26,7 @@ export default {
         reminder: !taskToToggle.reminder,
       };
 
-      const res = await fetch(`/api/tasks/?id=${id}`, {
+      const res = await fetch(`/api/tasks/${id}`, {
         method: 'PUT',
         headers: { 'Content-type': 'application/json' },
         body: JSON.stringify(updTask),
@@ -37,7 +37,7 @@ export default {
     },
     async deleteTask(id) {
       if (confirm('Are you sure?')) {
-        const res = await fetch(`/api/tasks/?id=${id}`, {
+        const res = await fetch(`/api/tasks/${id}`, {
           method: 'DELETE',
         });
         const data = await res.json();
@@ -66,7 +66,7 @@ export default {
       return data;
     },
     async fetchTask(id) {
-      const res = await fetch(`/api/tasks/?id=${id}`);
+      const res = await fetch(`/api/tasks/${id}`);
       const data = await res.json();
       return data;
     },
